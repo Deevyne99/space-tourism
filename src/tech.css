@@ -1,0 +1,111 @@
+.section-tech {
+  background-image: url('../public/assets/technology/background-technology-mobile.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.remove {
+  width: 100%;
+}
+.image-box {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+.tech-photo {
+  width: 100%;
+}
+.tech-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+
+  /* background-color: aqua; */
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+  /* background-color: brown; */
+}
+.tech-btn {
+  height: 50px;
+  width: 50px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1rem;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #ffffff;
+}
+.tech-btn.active {
+  background-color: #ffffff;
+  color: #0b0d17;
+}
+.bio {
+  /* background-color: red; */
+  margin: 0 auto;
+  /* margin-top: 1rem; */
+}
+.bio-tech {
+  margin-top: 2rem;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 678px) {
+  .section-tech {
+    background-image: url('../public/assets/technology/background-technology-tablet.jpg');
+    height: 100%;
+  }
+  .tech {
+    margin-left: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section-tech {
+    background-image: url('../public/assets/technology/background-technology-desktop.jpg');
+    height: 100vh;
+  }
+  .information {
+    flex-direction: row-reverse;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  .image-box {
+    width: 50%;
+  }
+  .tech-photo {
+    max-width: 500px;
+    height: 300px;
+    margin-left: auto;
+  }
+  .tech-data {
+    width: 50%;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .btn-wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1.5rem;
+  }
+  .bio {
+    justify-content: flex-start;
+  }
+  .role-trch {
+    font-size: 1rem;
+  }
+  .bio-data {
+    max-width: 400px;
+  }
+}

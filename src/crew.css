@@ -1,0 +1,240 @@
+.section-crew {
+  background-image: url('../public/assets/crew/background-crew-mobile.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+@media screen and (min-width: 425px) {
+  .section-crew {
+    height: 100vh;
+  }
+}
+.container-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s linear;
+}
+.division {
+  height: 1px;
+  width: 100%;
+  background: rgba(56, 59, 75, 1);
+  /* margin-bottom: 2rem; */
+}
+.crew-data {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  transition: all 0.3s linear;
+}
+.photo-crew {
+  width: 45%;
+}
+.crew-btn {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  max-width: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.btn-crew {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  opacity: 0.17;
+  cursor: pointer;
+}
+.btn-crew:hover {
+  background-color: rgba(208, 214, 249, 1);
+  opacity: 1;
+}
+.btn-crew.active {
+  opacity: 1;
+}
+.bio {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  /* margin-bottom: 6rem; */
+  width: 100%;
+}
+.role {
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.5;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+.name {
+  margin-top: 0.5rem;
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.bio-data {
+  max-width: 350px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  /* or 167% */
+  width: 100%;
+  text-align: center;
+
+  color: #d0d6f9;
+}
+@media screen and (min-width: 678px) {
+  .section-crew {
+    background-image: url('../public/assets/crew/background-crew-desktop.jpg');
+    height: 100%;
+  }
+  .image {
+    order: 2;
+  }
+  .division {
+    display: none;
+  }
+  .crew-data {
+    order: 1;
+  }
+  .bio {
+    order: 1;
+    max-width: 500px;
+  }
+  .role {
+    font-size: 1rem;
+  }
+  .name {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+  }
+  .bio-data {
+    margin-top: 1rem;
+  }
+  .crew-btn {
+    order: 2;
+    margin-top: 1.5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .section-crew {
+    height: 100vh;
+    background-image: url('../public/assets/crew/background-crew-desktop.jpg');
+  }
+  .container-content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 2rem;
+    /* background-color: red; */
+    gap: 2rem;
+    margin-top: -7rem;
+    width: 100%;
+  }
+  .img-container {
+    width: 50%;
+    /* background-color: blue; */
+  }
+  .bio {
+    max-width: 100%;
+  }
+  .image {
+    margin-left: auto;
+  }
+  .bio-data {
+    text-align: left;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: 1.5rem;
+    margin-top: 3rem;
+  }
+  .role {
+    text-align: left;
+    margin-right: auto;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .image {
+    margin-left: auto;
+  }
+  .name {
+    text-align: left;
+    margin-right: auto;
+    margin-left: 1.5rem;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    line-height: 50px;
+  }
+  .crew-data {
+    width: 50%;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    /* background-color: green; */
+  }
+  .crew-btn {
+    margin-right: auto;
+    /* background-color: blue; */
+    align-items: flex-start;
+    margin-left: 1.7rem;
+    max-width: 100px;
+  }
+}
+@media screen and (min-width: 11089px) {
+  .container-content {
+    justify-content: center;
+  }
+  .crew-data {
+    margin-top: 10rem;
+  }
+}
+@media screen and (min-width: 11089px) {
+  .section-crew {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1101px) {
+  .section-crew {
+    height: 100%;
+  }
+  .name {
+    font-size: 2.7rem;
+  }
+  .container-content {
+    margin-top: 8rem;
+  }
+  .crew-data {
+    max-width: 600px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-crew {
+    height: auto;
+  }
+  .container-content {
+    margin-top: -6rem;
+  }
+}
